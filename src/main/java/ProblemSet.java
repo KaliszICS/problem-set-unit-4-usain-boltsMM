@@ -2,7 +2,7 @@
         * File: ProblemSet unit 4
         * Author: Mansoor Muhammad
         * Date Created: April 23, 2026
-        * Date Last Modified: April 26, 2026
+        * Date Last Modified: April 27, 2026
         */
 
 import java.util.Random;//imports Input and Random
@@ -74,8 +74,17 @@ public class ProblemSet {
                 correct = true;
             }
 
-            System.out.println("\nThe number was " + number + ". You were " + (correct ? "correct." : "incorrect."));
+String result;
+if (correct){
+       result = "correct";
+}
 
+else {result = "incorrect";}
+       
+
+               
+               
+            System.out.println("\nThe number was " + number + ". You were " + result)
             if (correct) {
                 score = score + 1;
             }

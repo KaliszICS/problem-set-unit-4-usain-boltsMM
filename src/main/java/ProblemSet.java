@@ -79,12 +79,14 @@ if (correct){
        result = "correct";
 }
 
-else {result = "incorrect";}
+else {
+       result = "incorrect";
+}
        
 
                
                
-            System.out.println("\nThe number was " + number + ". You were " + result)
+            System.out.println("\nThe number was " + number + ". You were " + result);
             if (correct) {
                 score = score + 1;
             }

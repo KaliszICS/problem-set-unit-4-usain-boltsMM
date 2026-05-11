@@ -1,3 +1,4 @@
+
 /**
         * File: ProblemSet unit 4
         * Author: Mansoor Muhammad
@@ -8,7 +9,7 @@
 import java.util.Random;//imports Input and Random
 import java.util.Scanner;
 
-public class ProblemSet {
+public class HighLowGame {
 
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
@@ -19,10 +20,10 @@ public class ProblemSet {
         int rounds = 0;
         boolean validRounds = false;
 
-        while (!validRounds) { 
+        while (!validRounds) {
             System.out.print("Input a number of rounds to play: ");
 
-            if (scanner.hasNextInt()) { //checks input for only integer numbers and rounds left
+            if (scanner.hasNextInt()) { // checks input for only integer numbers and rounds left
                 rounds = scanner.nextInt();
                 if (rounds > 0) {
                     validRounds = true;
@@ -43,7 +44,7 @@ public class ProblemSet {
             int choice = 0;
             boolean validChoice = false;
 
-            while (!validChoice) {  
+            while (!validChoice) {
                 System.out.println("\nPlease select High, Low or Even:");// displays choices
                 System.out.println("1. High (11 to 20)");
                 System.out.println("2. Low (0 to 9)");
@@ -74,18 +75,15 @@ public class ProblemSet {
                 correct = true;
             }
 
-String result;
-if (correct){
-       result = "correct";
-}
+            String result;
+            if (correct) {
+                result = "correct";
+            }
 
-else {
-       result = "incorrect";
-}
-       
+            else {
+                result = "incorrect";
+            }
 
-               
-               
             System.out.println("\nThe number was " + number + ". You were " + result);
             if (correct) {
                 score = score + 1;

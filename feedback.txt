@@ -1,0 +1,9 @@
+K(30%): 100
+I(30%): 99
+C(10%): 75
+A(30%): 100
+
+97.2% of 90 - 87.48%
+
+Great work Mansoor.  Don't forget to comment your code.
+You don't need to check if the random number is less than 20 or more than 0 since your random range already deals with that.
